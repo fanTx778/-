@@ -1,0 +1,15 @@
+{
+  "name": "bishe-powder-wall-lift",
+  "version": "1.0.0",
+  "private": true,
+  "description": "黄河科技学院 2026 届毕业设计「室内粉墙升降平台结构设计及运动分析」材料生成工程",
+  "scripts": {
+    "build": "node src/build_all.js",
+    "build:review": "node src/build_review.js",
+    "build:proposal": "node src/build_proposal.js",
+    "check": "node src/check.js"
+  },
+  "dependencies": {
+    "docx": "^9.5.1"
+  }
+}
