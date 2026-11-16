@@ -11,7 +11,16 @@
 | 文献综述 | 完成（第一代） | docs/01_文献综述.md → out/文献综述.docx（正文 5027 字，Word 9 页） |
 | 开题报告 | 完成（第一代） | docs/02_开题报告.md → out/开题报告.docx（3076 字，Word 5 页） |
 | 格式自检 | 完成 | `npm run check` 全部通过；另用 Word COM 复核页边距/字体/行距/表宽 |
-| 推送 | 待做 | `main` 分支 |
+| 推送 | 已打通 | `main` 分支；GitHub Desktop 安装后命令行可直接 push，无需 PAT |
+
+## 已完成的迭代
+
+**第二轮（2026-11-17）**
+- 正文引号：文献综述 30 处、开题报告 40 处直引号 → 中文引号“”
+- 删去四处纯过渡语（必须指出的是 / 正是在这一背景下 / 综合来看 / 值得注意的是），正文 5027 → 5005 字
+- 新增 `src/build_all.js`，`npm run build` 现在能一次生成两份（此前只配了 build:review / build:proposal）
+- 补 `.gitignore`
+- 推送链路打通：GitHub Desktop 装好后，`git push` 直接成功（commit f16b162）
 
 ## 待确认 / 待填
 

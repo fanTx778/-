@@ -2,3 +2,4 @@ node_modules/
 *.tmp
 ~$*.docx
 .DS_Store
+push.bat
