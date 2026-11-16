@@ -14,8 +14,8 @@ const OUT = path.join(ROOT, 'out', '文献综述.docx');
 const INFO = {
   college: '应用技术学院',
   major: '机械设计制造及其自动化',
-  student: '【姓名】',
-  teacher: '【指导教师】',
+  student: '范锋育',
+  teacher: '高大伟',
   date: '2025年12月25日',
 };
 

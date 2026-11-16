@@ -15,11 +15,11 @@ const OUT = path.join(ROOT, 'out', '开题报告.docx');
 const INFO = {
   title: '室内粉墙升降平台结构设计及运动分析',
   source: '教师拟订',
-  type: 'AY',
-  teacher: '【指导教师】',
-  student: '【姓名】',
+  type: 'AX',
+  teacher: '高大伟',
+  student: '范锋育',
   major: '机械设计制造及其自动化',
-  sno: '【学号】',
+  sno: '2328050011',
   signDate: '2026 年 1 月 5 日',
 };
 

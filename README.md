@@ -14,9 +14,14 @@ docs/            材料源稿与要求摘录
  01_文献综述.md        文献综述正文源稿
  02_开题报告.md        开题报告正文源稿
  03_参考文献.md        参考文献（已核对著录信息）
+ 04_任务书.md          任务书正文源稿
+ 05_课题申报表.md      课题申报表正文源稿
 src/             生成与校验脚本
  build_review.js      生成 文献综述.docx
  build_proposal.js    生成 开题报告.docx
+ build_task.js        生成 任务书.docx
+ build_declare.js     生成 课题申报表.docx
+ build_all.js         一次生成全部
  lib.js               统一样式（字体/行距/缩进/页边距）
  check.js             字数与格式自检
 out/             生成的 .docx（提交进仓库，便于直接下载）

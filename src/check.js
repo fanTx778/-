@@ -64,7 +64,7 @@ function checkDocx(file, opt) {
     [`行距${opt.line}`]: count(xml, new RegExp('w:line="' + opt.line + '" w:lineRule="exact"', 'g')),
     '首行缩进2字符段': count(xml, new RegExp('w:firstLine="' + (opt.size * 20) + '"', 'g')),
     ...(opt.needRef === false ? {} : { '上标角标': count(xml, /w:vertAlign w:val="superscript"/g) }),
-    '表格数': count(xml, /<w:tbl>/g),
+    ...(opt.needTable === false ? {} : { '表格数': count(xml, /<w:tbl>/g) }),
   };
 
   const pgOk = Math.abs(margin.top - opt.margin.top) <= 2
@@ -114,6 +114,28 @@ if (fs.existsSync(propPath)) {
     needRef: false,
     margin: { top: 1440, bottom: 1440, left: 1440, right: 1440 },
   });
+}
+
+// 任务书（左 3cm，上/下/右 2.5cm）
+const taskPath = path.join(ROOT, 'out', '任务书.docx');
+if (fs.existsSync(taskPath)) {
+  checkDocx(taskPath, {
+    line: 480, size: 24, minWords: 800, needRef: false, needTable: false,
+    margin: { top: 1417, bottom: 1417, left: 1701, right: 1417 },
+  });
+} else {
+  console.log('缺少 out/任务书.docx');
+}
+
+// 课题申报表
+const decPath = path.join(ROOT, 'out', '课题申报表.docx');
+if (fs.existsSync(decPath)) {
+  checkDocx(decPath, {
+    line: 400, size: 21, minWords: 1000, needRef: false,
+    margin: { top: 1440, bottom: 1440, left: 1440, right: 1440 },
+  });
+} else {
+  console.log('缺少 out/课题申报表.docx');
 }
 
 console.log(fail ? '\n有 ' + fail + ' 项未通过' : '\n全部检查通过');
