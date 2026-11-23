@@ -18,12 +18,15 @@ docs/            材料源稿与要求摘录
  05_课题申报表.md      课题申报表正文源稿
 src/             生成与校验脚本
  build_review.js      生成 文献综述.docx
- build_proposal.js    生成 开题报告.docx
+ build_proposal.js    生成 开题报告.docx（支持 ![图题](路径) 图片块）
  build_task.js        生成 任务书.docx
  build_declare.js     生成 课题申报表.docx
  build_all.js         一次生成全部
  lib.js               统一样式（字体/行距/缩进/页边距）
  check.js             字数与格式自检
+assets/          插图源文件
+ 技术路线图.drawio    开题报告图 1 的 draw.io 源文件（可编辑）
+ 技术路线图.png       导出的插图（1800×1660，插入宽 12.2 cm）
 out/             生成的 .docx（提交进仓库，便于直接下载）
 PROGRESS.md      当前进度与下一步（每次继续工作先读这个）
 ```
@@ -35,6 +38,15 @@ npm install
 npm run build      # 生成全部 docx
 npm run check      # 字数/篇数/格式自检
 ```
+
+插图重导出（改完 `assets/技术路线图.drawio` 后）：
+
+```bash
+"C:/Tools/drawio/draw.io.exe" -x -f png --width 1800 --disable-gpu \
+  -o assets/技术路线图.png assets/技术路线图.drawio
+```
+
+draw.io 32.7.4 便携版解压在 `C:/Tools/drawio/`，无安装、可整目录删除。
 
 ## 格式约束（速查）
 

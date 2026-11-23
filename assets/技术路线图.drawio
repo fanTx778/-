@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="drawio" version="32.7.4">
+  <diagram id="tech-route" name="技术路线图">
+    <mxGraphModel dx="1000" dy="800" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="860" pageHeight="790" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- 阶段标签 -->
+        <mxCell id="s1" value="调研准备" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#B3B3B3;fontColor=#333333;fontFamily=SimSun;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="8" y="26" width="72" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="s2" value="方案选型" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#B3B3B3;fontColor=#333333;fontFamily=SimSun;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="8" y="108" width="72" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="s3" value="结构设计" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#B3B3B3;fontColor=#333333;fontFamily=SimSun;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="8" y="270" width="72" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="s4" value="强度校核" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#B3B3B3;fontColor=#333333;fontFamily=SimSun;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="8" y="355" width="72" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="s5" value="运动分析" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#B3B3B3;fontColor=#333333;fontFamily=SimSun;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="8" y="526" width="72" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="s6" value="成果输出" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#B3B3B3;fontColor=#333333;fontFamily=SimSun;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="8" y="720" width="72" height="44" as="geometry" />
+        </mxCell>
+
+        <!-- 阶段一 -->
+        <mxCell id="a1" value="资料调研与工况分析&#xa;（16 篇文献 · 抹灰标准 · 室内受限空间工况）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontFamily=SimSun;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="190" y="16" width="520" height="62" as="geometry" />
+        </mxCell>
+
+        <!-- 阶段二：方案比较 -->
+        <mxCell id="b1" value="剪叉式&#xa;承载强、收缩比大&#xa;高位横向刚度低" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontFamily=SimSun;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="110" y="104" width="230" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="b2" value="桅柱式&#xa;结构紧凑、垂直度好&#xa;承载有限、同步复杂" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontFamily=SimSun;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="355" y="104" width="230" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="b3" value="导轨附着式&#xa;贴墙精度高&#xa;需固定导轨、不便移动" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontFamily=SimSun;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="600" y="104" width="230" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="c1" value="确定方案：剪叉式主体 + 贴墙导向轮 + 四角螺旋调平支腿" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontFamily=SimSun;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="194" width="520" height="48" as="geometry" />
+        </mxCell>
+
+        <!-- 阶段三：结构设计 -->
+        <mxCell id="d1" value="剪叉机构设计&#xa;（层数 / 臂长 / 铰点）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontFamily=SimSun;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="110" y="262" width="230" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="d2" value="平台与底盘框架&#xa;（台面 / 导向轮 / 支腿）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontFamily=SimSun;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="355" y="262" width="230" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="d3" value="驱动系统选型&#xa;（液压缸 / 电动推杆）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontFamily=SimSun;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="600" y="262" width="230" height="64" as="geometry" />
+        </mxCell>
+
+        <!-- 阶段四：强度校核 -->
+        <mxCell id="e1" value="关键件强度校核&#xa;（剪叉臂 · 销轴 · 纵梁；满载 + 单侧偏载 + 贴墙顶紧）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontFamily=SimSun;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="190" y="350" width="520" height="56" as="geometry" />
+        </mxCell>
+
+        <!-- 阶段五：运动分析 -->
+        <mxCell id="f1" value="解析法&#xa;举升角—高度关系 → 贴墙作业点轨迹" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontFamily=SimSun;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="120" y="430" width="330" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="f2" value="仿真法&#xa;SolidWorks 建模 → ADAMS 三工况仿真" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontFamily=SimSun;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="470" y="430" width="330" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="g1" value="解析与仿真结果互校，确定平台位姿偏差规律" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontFamily=SimSun;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="190" y="520" width="520" height="48" as="geometry" />
+        </mxCell>
+
+        <!-- 判断 -->
+        <mxCell id="h1" value="偏差 ≤ 3 mm&#xa;水平度 ≤ 0.5°？" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontFamily=SimSun;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="300" y="594" width="300" height="96" as="geometry" />
+        </mxCell>
+
+        <!-- 阶段六：成果 -->
+        <mxCell id="i1" value="绘制装配图与零件图&#xa;撰写设计说明书，准备答辩" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontFamily=SimSun;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="718" width="520" height="56" as="geometry" />
+        </mxCell>
+
+        <!-- 连线 -->
+        <mxCell id="l1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#666666;" edge="1" parent="1" source="a1" target="b1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#666666;" edge="1" parent="1" source="a1" target="b2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#666666;" edge="1" parent="1" source="a1" target="b3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#666666;" edge="1" parent="1" source="b1" target="c1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#666666;" edge="1" parent="1" source="b2" target="c1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#666666;" edge="1" parent="1" source="b3" target="c1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#666666;" edge="1" parent="1" source="c1" target="d1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#666666;" edge="1" parent="1" source="c1" target="d2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#666666;" edge="1" parent="1" source="c1" target="d3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#666666;" edge="1" parent="1" source="d1" target="e1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#666666;" edge="1" parent="1" source="d2" target="e1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#666666;" edge="1" parent="1" source="d3" target="e1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#666666;" edge="1" parent="1" source="e1" target="f1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#666666;" edge="1" parent="1" source="e1" target="f2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#666666;" edge="1" parent="1" source="f1" target="g1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#666666;" edge="1" parent="1" source="f2" target="g1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#666666;" edge="1" parent="1" source="g1" target="h1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l18" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#666666;fontFamily=SimSun;fontSize=13;" edge="1" parent="1" source="h1" target="i1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1.2;strokeColor=#666666;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="h1" target="d1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="88" y="642" />
+              <mxPoint x="88" y="294" />
+            </Array>
+            <mxPoint x="110" y="294" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l19t" value="否，参数优化" style="text;html=1;align=left;verticalAlign=middle;fontFamily=SimSun;fontSize=13;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="96" y="610" width="110" height="24" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

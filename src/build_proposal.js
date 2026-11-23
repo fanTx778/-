@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const {
   Document, Packer, Paragraph, TextRun, AlignmentType, Table, TableRow, TableCell,
-  WidthType, VerticalAlign, LineRuleType, BorderStyle,
+  WidthType, VerticalAlign, LineRuleType, BorderStyle, ImageRun,
 } = require('docx');
 const { SZ, EN, CN_SONG, CN_HEI, makeRuns } = require('./lib');
 
@@ -44,9 +44,43 @@ function parse(md) {
     if (line.startsWith('### ')) { blocks.push({ t: 'h2', s: line.slice(4).trim() }); continue; }
     if (line.startsWith('## ')) { blocks.push({ t: 'h1', s: line.slice(3).trim() }); continue; }
     if (line.startsWith('# ')) continue;
+    const img = line.match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
+    if (img) { blocks.push({ t: 'img', alt: img[1], src: img[2] }); continue; }
     blocks.push({ t: 'p', s: line });
   }
   return blocks;
+}
+
+// 插图：按 12.2 cm 宽等比缩放；图题黑体小五居中
+const IMG_W_PX = Math.round((12.2 / 2.54) * 96); // 12.2 cm @ 96 dpi
+
+function pngSize(buf) {
+  if (buf.readUInt32BE(0) !== 0x89504e47) throw new Error('不是 PNG 文件');
+  return { w: buf.readUInt32BE(16), h: buf.readUInt32BE(20) };
+}
+
+function imageBlock(b) {
+  const file = path.resolve(path.dirname(SRC), b.src);
+  const data = fs.readFileSync(file);
+  const { w, h } = pngSize(data);
+  return [
+    new Paragraph({
+      alignment: AlignmentType.CENTER,
+      // 图片段落必须用自动行距，否则继承正文的固定 20 磅行距会把图片压到相邻行
+      spacing: { before: 120, after: 40, line: 240, lineRule: LineRuleType.AUTO },
+      keepNext: true,
+      children: [new ImageRun({
+        type: 'png',
+        data,
+        transformation: { width: IMG_W_PX, height: Math.round((IMG_W_PX * h) / w) },
+      })],
+    }),
+    new Paragraph({
+      alignment: AlignmentType.CENTER,
+      spacing: { before: 0, after: 0 },
+      children: makeRuns(b.alt || '', { size: SZ.xiaowu, cn: CN_HEI }),
+    }),
+  ];
 }
 
 function buildBody(blocks) {
@@ -57,6 +91,8 @@ function buildBody(blocks) {
       out.push(p(b.s, { bold: true, align: 'left', before: 200, after: 200, indentChars: 0 }));
     } else if (b.t === 'h2') {
       out.push(p(b.s, { bold: false, align: 'left', before: 100, after: 0, indentChars: 0 }));
+    } else if (b.t === 'img') {
+      out.push(...imageBlock(b));
     } else {
       out.push(p(b.s, { indentChars: 2 }));
     }
