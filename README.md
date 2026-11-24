@@ -16,18 +16,21 @@ docs/            材料源稿与要求摘录
  03_参考文献.md        参考文献（已核对著录信息）
  04_任务书.md          任务书正文源稿
  05_课题申报表.md      课题申报表正文源稿
+ 06_答辩问答摘要.md    开题答辩问答口径（自述稿 + 20 问参考回答）
 src/             生成与校验脚本
  build_review.js      生成 文献综述.docx
  build_proposal.js    生成 开题报告.docx（支持 ![图题](路径) 图片块）
  build_task.js        生成 任务书.docx
  build_declare.js     生成 课题申报表.docx
+ build_qa.js          生成 答辩问答摘要.docx（解析 06_答辩问答摘要.md）
+ build_ppt.js         生成 开题答辩.pptx（16 页，画面放关键词、讲法写备注，口径与 01/02 源稿一致）
  build_all.js         一次生成全部
  lib.js               统一样式（字体/行距/缩进/页边距）
  check.js             字数与格式自检
 assets/          插图源文件
  技术路线图.drawio    开题报告图 1 的 draw.io 源文件（可编辑）
  技术路线图.png       导出的插图（1800×1660，插入宽 12.2 cm）
-out/             生成的 .docx（提交进仓库，便于直接下载）
+out/             生成的 .docx / .pptx（提交进仓库，便于直接下载）
 PROGRESS.md      当前进度与下一步（每次继续工作先读这个）
 ```
 
@@ -35,7 +38,9 @@ PROGRESS.md      当前进度与下一步（每次继续工作先读这个）
 
 ```bash
 npm install
-npm run build      # 生成全部 docx
+npm run build      # 生成全部 docx 与 pptx
+npm run build:ppt  # 只生成 开题答辩.pptx
+npm run build:qa   # 只生成 答辩问答摘要.docx
 npm run check      # 字数/篇数/格式自检
 ```
 

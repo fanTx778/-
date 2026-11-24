@@ -1,5 +1,6 @@
 node_modules/
 *.tmp
 ~$*.docx
+~$*.pptx
 .DS_Store
 push.bat

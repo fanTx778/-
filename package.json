@@ -7,9 +7,12 @@
     "build": "node src/build_all.js",
     "build:review": "node src/build_review.js",
     "build:proposal": "node src/build_proposal.js",
+    "build:qa": "node src/build_qa.js",
+    "build:ppt": "node src/build_ppt.js",
     "check": "node src/check.js"
   },
   "dependencies": {
-    "docx": "^9.5.1"
+    "docx": "^9.5.1",
+    "pptxgenjs": "^4.0.1"
   }
 }

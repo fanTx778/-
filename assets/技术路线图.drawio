@@ -62,18 +62,18 @@
         </mxCell>
 
         <!-- 阶段五：运动分析 -->
-        <mxCell id="f1" value="解析法&#xa;举升角—高度关系 → 贴墙作业点轨迹" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontFamily=SimSun;fontSize=13;" vertex="1" parent="1">
+        <mxCell id="f1" value="解析法&#xa;举升角—高度关系 + 误差预算" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontFamily=SimSun;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="120" y="430" width="330" height="64" as="geometry" />
         </mxCell>
-        <mxCell id="f2" value="仿真法&#xa;SolidWorks 建模 → ADAMS 三工况仿真" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontFamily=SimSun;fontSize=13;" vertex="1" parent="1">
+        <mxCell id="f2" value="仿真法&#xa;SolidWorks 建模 → ADAMS 铰点力提取" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontFamily=SimSun;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="470" y="430" width="330" height="64" as="geometry" />
         </mxCell>
-        <mxCell id="g1" value="解析与仿真结果互校，确定平台位姿偏差规律" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontFamily=SimSun;fontSize=14;" vertex="1" parent="1">
+        <mxCell id="g1" value="误差预算判定间隙保持性，确定平行度是否可达" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontFamily=SimSun;fontSize=14;" vertex="1" parent="1">
           <mxGeometry x="190" y="520" width="520" height="48" as="geometry" />
         </mxCell>
 
         <!-- 判断 -->
-        <mxCell id="h1" value="偏差 ≤ 3 mm&#xa;水平度 ≤ 0.5°？" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontFamily=SimSun;fontSize=13;" vertex="1" parent="1">
+        <mxCell id="h1" value="间隙变化 ≤ 3 mm&#xa;水平度 ≤ 0.5°？" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontFamily=SimSun;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="300" y="594" width="300" height="96" as="geometry" />
         </mxCell>
 
